@@ -1,0 +1,15 @@
+{
+    "name":"HoshinoLabs Listing (PreRelease)",
+    "id":"com.hoshinolabs.vpm-prerelease",
+    "url":"https://ikuko.github.io/vpm-test/vpm-prerelease.json",
+    "author":{
+        "email":"magi.ikuko@gmail.com",
+        "name":"ikuko",
+        "url":"https://docs.hoshinolabs.com"
+    },
+    "description":"HoshinoLabs listing of VRChat packages",
+    "bannerUrl":"banner.png",
+    "githubRepos":[
+        "ikuko/test-package"
+    ]
+}
