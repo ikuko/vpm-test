@@ -8,10 +8,6 @@
         "url":"https://docs.hoshinolabs.com"
     },
     "description":"HoshinoLabs listing of VRChat packages",
-    "infoLink":{
-        "url":"http://github.com/ikuko/vpm-test",
-        "text":"View on GitHub"
-    },
     "bannerUrl":"banner.png",
     "githubRepos":[
         "ikuko/test-package"
