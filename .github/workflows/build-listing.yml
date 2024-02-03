@@ -47,11 +47,11 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/global.json', '**/*.csproj') }}
           
       - name: Build Package Version Listing
-        run: ${{env.pathToCi}}/build.cmd BuildMultiPackageListing --root ${{env.pathToCi}} --list-publish-directory $GITHUB_WORKSPACE/${{env.listPublishDirectory}} --package-listing-source-filename vpm-prerelease.json --package-listing-publish-filename vpm-prerelease.json --include-prerelease true --only-package-listing-publish true
+        run: ${{env.pathToCi}}/build.cmd BuildMultiPackageListing --root ${{env.pathToCi}} --list-publish-directory $GITHUB_WORKSPACE/${{env.listPublishDirectory}} --package-listing-source-filename vpm.json --package-listing-publish-filename vpm.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build Package Version Listing
-        run: ${{env.pathToCi}}/build.cmd BuildMultiPackageListing --root ${{env.pathToCi}} --list-publish-directory $GITHUB_WORKSPACE/${{env.listPublishDirectory}} --package-listing-source-filename vpm.json --package-listing-publish-filename vpm.json
+        run: ${{env.pathToCi}}/build.cmd BuildMultiPackageListing --root ${{env.pathToCi}} --list-publish-directory $GITHUB_WORKSPACE/${{env.listPublishDirectory}} --package-listing-source-filename vpm-prerelease.json --package-listing-publish-filename vpm-prerelease.json --include-prerelease true --only-package-listing-publish true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
  
